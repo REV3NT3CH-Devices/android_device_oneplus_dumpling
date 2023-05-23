@@ -11,6 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from dumpling device
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
+# Enable Rom Features
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
